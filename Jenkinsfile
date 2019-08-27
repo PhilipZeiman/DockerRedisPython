@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                script {
-                    bat(hostname)
-                }
+                echo "Hello World!"
             }
         }
     }
