@@ -1,4 +1,3 @@
 node {
-    sh "#!/bin/bash \n" + 
-       "echo \"Hello from \$SHELL\""
+    sh "echo Hello from "
 }
