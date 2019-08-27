@@ -1,7 +1,4 @@
-stage('Setting the variables values') {
-    steps {
-         bash '''#!/bin/bash
-                 echo "hello world" 
-         '''
-    }
+node {
+    sh "#!/bin/bash \n" + 
+       "echo \"Hello from \$SHELL\""
 }
