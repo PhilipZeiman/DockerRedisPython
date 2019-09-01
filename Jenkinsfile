@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('SC') {
             steps {
-                git https://github.com/PhilipZeiman/DockerRedisPython
+                git 'https://github.com/PhilipZeiman/DockerRedisPython'
             }
         }
         stage('build') {
