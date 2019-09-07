@@ -1,5 +1,6 @@
 pipeline {
     agent any
+     stage {
         stage('SC') {
             steps {
                 git 'https://github.com/PhilipZeiman/DockerRedisPython'
@@ -10,7 +11,7 @@ pipeline {
                 bat 'docker-compose up -d'
             }
         }
-        stage('build') {
+        stage('run') {
             steps {
                 bat 'python selenium.py'
             }
