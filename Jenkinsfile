@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    stage {
+    stages {
         stage('SC') {
             steps {
                 git 'https://github.com/PhilipZeiman/DockerRedisPython'
